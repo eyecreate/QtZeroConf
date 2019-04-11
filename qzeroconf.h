@@ -66,10 +66,10 @@ public:
 
 Q_SIGNALS:
 	void servicePublished(void);
-	void error(QZeroConf::error_t);
-	void serviceAdded(QZeroConfService);
-	void serviceUpdated(QZeroConfService);
-	void serviceRemoved(QZeroConfService);
+	void error(QZeroConf::error_t error);
+	void serviceAdded(QZeroConfService service);
+	void serviceUpdated(QZeroConfService service);
+	void serviceRemoved(QZeroConfService service);
 
 private:
 	QZeroConfPrivate	*pri;
