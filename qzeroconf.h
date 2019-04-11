@@ -53,12 +53,12 @@ public:
 	void startServicePublish(const char *name, const char *type, const char *domain, quint16 port);
 	void stopServicePublish(void);
 	bool publishExists(void);
-	inline void startBrowser(QString type)
+	Q_INVOKABLE inline void startBrowser(QString type)
 	{
 		startBrowser(type, QAbstractSocket::IPv4Protocol);
 	}
-	void startBrowser(QString type, QAbstractSocket::NetworkLayerProtocol protocol);
-	void stopBrowser(void);
+	Q_INVOKBALE void startBrowser(QString type, QAbstractSocket::NetworkLayerProtocol protocol);
+	Q_INVOKABLE void stopBrowser(void);
 	bool browserExists(void);
 	void addServiceTxtRecord(QString nameOnly);
 	void addServiceTxtRecord(QString name, QString value);
