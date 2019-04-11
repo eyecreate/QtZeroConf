@@ -57,7 +57,7 @@ public:
 	{
 		startBrowser(type, QAbstractSocket::IPv4Protocol);
 	}
-	Q_INVOKBALE void startBrowser(QString type, QAbstractSocket::NetworkLayerProtocol protocol);
+	Q_INVOKABLE void startBrowser(QString type, QAbstractSocket::NetworkLayerProtocol protocol);
 	Q_INVOKABLE void stopBrowser(void);
 	bool browserExists(void);
 	void addServiceTxtRecord(QString nameOnly);
